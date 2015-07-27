@@ -29,7 +29,8 @@ Please use the issue tracker to report bugs or propose new features.
 ## Installation
 
 ```
-pip install libsass django-compressor django-sass-processor
+pip install libsass django-compressor
+pip install -e git+https://github.com/Tamarabyte/django-sass-processor.git#egg=django_sass_processor_master
 ```
 
 ``django-compressor`` is required only for offline compilation, when using the command
