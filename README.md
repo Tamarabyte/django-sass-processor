@@ -15,6 +15,8 @@ easier.
 With this tool, you can safely remove your Ruby installations “Compass” and “SASS” from your Django
 projects.
 
+## About this Fork
+This fork makes the the manage.py compilescss command python 3.0 and django 1.8 compatible. It requires django 1.8.
 
 ## Project's Home
 
@@ -120,22 +122,3 @@ reverse the above command:
 ```
 
 This will remove all occurrences of previously generated ``*.css`` files.
-
-
-## Changelog
-
-* 0.2.4
- - Forcing compiled unicode to bytes, since 'Font Awesome' uses Unicode Private Use Area (PUA)
-   and hence implicit conversion on ``fh.write()`` failed.
-
-* 0.2.3 
- - Allow for setting template extensions and output style.
- - Force Django to calculate template_source_loaders from TEMPLATE_LOADERS settings, by asking to find a dummy template.
-
-* 0.2.0 
- - Removed dependency to **django-sekizai** and **django-classy-tags**. It now can operate in
-   stand-alone mode. Therefore the project has been renamed to **django-sass-processor**.
-
-* 0.1.0 
- - Initial revision named **django-sekizai-processors**, based on a preprocessor for the Sekizai
-   template tags ``{% addtoblock %}``.
